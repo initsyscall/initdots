@@ -25,6 +25,10 @@ cursor-text = #161423
 selection-background = #322D4A
 selection-foreground = #E0DEF4
 
+# Cursor animation shader (Neovide-like smear trail)
+custom-shader-animation = always
+custom-shader = shaders/cursor_warp.glsl
+
 # Normal colors
 palette = 0=#201D33
 palette = 1=#FF3366
