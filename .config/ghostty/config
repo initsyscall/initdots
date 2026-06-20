@@ -1,0 +1,47 @@
+# ---------------------------------------------------------------------
+# nightSyscall // Ghostty
+# Source: https://codeberg.org/initsyscall/themeInit
+# ---------------------------------------------------------------------
+font-family = "JetBrainsMono Nerd Font"
+font-size = 11
+
+# Window Decorations
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = false
+confirm-close-surface = false
+
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:up
+keybind = ctrl+shift+k=goto_split:down
+keybind = ctrl+shift+l=goto_split:right
+background-opacity = 0.65 
+background-blur = true
+
+background = #161423
+foreground = #E0DEF4
+cursor-color = #FF3366
+cursor-text = #161423
+selection-background = #322D4A
+selection-foreground = #E0DEF4
+
+# Normal colors
+palette = 0=#201D33
+palette = 1=#FF3366
+palette = 2=#F087BD
+palette = 3=#F6C177
+palette = 4=#CBA6F7
+palette = 5=#A277FF
+palette = 6=#80FFEA
+palette = 7=#E0DEF4
+
+# Bright colors
+palette = 8=#6E6A86
+palette = 9=#FF3366
+palette = 10=#F087BD
+palette = 11=#F6C177
+palette = 12=#CBA6F7
+palette = 13=#A277FF
+palette = 14=#80FFEA
+palette = 15=#908CAA
+

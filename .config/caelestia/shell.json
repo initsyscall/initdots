@@ -1,0 +1,81 @@
+{
+    "appearance": {
+        "transparency": {
+            "enabled": true
+        }
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": true,
+            "inverted": false
+        },
+        "clock": {
+            "background": false,
+            "showDate": true
+        },
+        "dragThreshold": 15,
+        "persistent": true,
+        "showOnHover": true,
+        "status": {
+            "showAudio": true,
+            "showMicrophone": false
+        },
+        "tray": {
+            "background": false,
+            "compact": true,
+            "recolour": false
+        },
+        "workspaces": {
+            "shown": 3
+        }
+    },
+    "dashboard": {
+        "showMedia": false
+    },
+    "general": {
+        "apps": {
+            "audio": [
+                "pavucontrol"
+            ],
+            "explorer": [
+                "nautilus",
+                "--new-window"
+            ],
+            "playback": [
+                "mpv"
+            ],
+            "terminal": [
+                "/usr/bin/ghostty",
+                "--gtk-single-instance=true"
+            ]
+        }
+    },
+    "launcher": {
+        "enableDangerousActions": true,
+        "enabled": true,
+        "favouriteApps": [
+            "zen",
+            "com.mitchellh.ghostty"
+        ],
+        "hiddenApps": [
+            "xfce4-about",
+            "bssh",
+            "bvnc",
+            "avahi-discover",
+            "thunar-bulk-rename",
+            "lstopo",
+            "thunar",
+            "thunar-settings"
+        ],
+        "showOnHover": false,
+        "useFuzzy": {
+            "actions": true,
+            "apps": true,
+            "schemes": true
+        },
+        "vimKeybinds": true
+    },
+    "paths": {
+        "wallpaperDir": "~/Pictures/wallpaper"
+    }
+}
