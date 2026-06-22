@@ -52,47 +52,7 @@ hl.config({
       noise    = 0.01,
     },
   },
-
-  animations = {
-    enabled = true,
-  },
 })
-
--- Premium bezier curves
-hl.curve("linear", { type = "bezier", points = { { 0, 0 }, { 1, 1 } } })
-hl.curve("md3_standard", { type = "bezier", points = { { 0.2, 0 }, { 0, 1 } } })
-hl.curve("md3_decel", { type = "bezier", points = { { 0.05, 0.7 }, { 0.1, 1 } } })
-hl.curve("md3_accel", { type = "bezier", points = { { 0.3, 0 }, { 0.8, 0.15 } } })
-hl.curve("overshot", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.1 } } })
-hl.curve("crazyshot", { type = "bezier", points = { { 0.1, 1.5 }, { 0.76, 0.92 } } })
-hl.curve("hyprnostretch", { type = "bezier", points = { { 0.05, 0.9 }, { 0.1, 1.0 } } })
-hl.curve("fluent_decel", { type = "bezier", points = { { 0.1, 1 }, { 0, 1 } } })
-hl.curve("easeInOutCirc", { type = "bezier", points = { { 0.85, 0 }, { 0.15, 1 } } })
-hl.curve("easeOutCirc", { type = "bezier", points = { { 0, 0.55 }, { 0.45, 1 } } })
-hl.curve("easeOutExpo", { type = "bezier", points = { { 0.16, 1 }, { 0.3, 1 } } })
-hl.curve("easeOutBack", { type = "bezier", points = { { 0.34, 1.56 }, { 0.64, 1 } } })
-hl.curve("easeOutQuint", { type = "bezier", points = { { 0.22, 1 }, { 0.36, 1 } } })
-hl.curve("easeInOutQuint", { type = "bezier", points = { { 0.83, 0 }, { 0.17, 1 } } })
-
--- Windows: pop in with subtle scale, fade, and slide
-hl.animation({ leaf = "windowsIn", enabled = true, speed = 3.5, bezier = "easeOutBack", style = "popin 85%" })
-hl.animation({ leaf = "windowsOut", enabled = true, speed = 3.5, bezier = "easeOutQuint", style = "popin 85%" })
-hl.animation({ leaf = "windows", enabled = true, speed = 3.5, bezier = "easeOutQuint", style = "popin 85%" })
-
--- Border: smooth color transitions
-hl.animation({ leaf = "border", enabled = true, speed = 8, bezier = "easeOutQuint" })
-hl.animation({ leaf = "borderangle", enabled = true, speed = 8, bezier = "easeOutQuint" })
-
--- Fade: smooth opacity transitions
-hl.animation({ leaf = "fade", enabled = true, speed = 2.5, bezier = "easeOutQuint" })
-hl.animation({ leaf = "fadeIn", enabled = true, speed = 2.5, bezier = "easeOutQuint" })
-hl.animation({ leaf = "fadeOut", enabled = true, speed = 2, bezier = "easeOutQuint" })
-hl.animation({ leaf = "fadeSwitch", enabled = true, speed = 3, bezier = "easeOutQuint" })
-hl.animation({ leaf = "fadeShadow", enabled = true, speed = 3, bezier = "easeOutQuint" })
-
--- Workspaces: slide with fade for a premium feel
-hl.animation({ leaf = "workspaces", enabled = true, speed = 4, bezier = "easeOutExpo", style = "slider" })
-hl.animation({ leaf = "specialWorkspace", enabled = true, speed = 3.5, bezier = "easeOutBack", style = "slidevert" })
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"

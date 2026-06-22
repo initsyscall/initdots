@@ -21,9 +21,9 @@
             "showMicrophone": false
         },
         "tray": {
-            "background": false,
+            "background": true,
             "compact": true,
-            "recolour": false
+            "recolour": true
         },
         "workspaces": {
             "shown": 3
