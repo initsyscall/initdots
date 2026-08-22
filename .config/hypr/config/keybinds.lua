@@ -17,10 +17,10 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
 
 -- Move
-hl.bind(mainMod .. " + SHIFT + Right", hl.dsp.window.move({ direction = "r" }))
-hl.bind(mainMod .. " + SHIFT + Left", hl.dsp.window.move({ direction = "l" }))
-hl.bind(mainMod .. " + SHIFT + Up", hl.dsp.window.move({ direction = "u" }))
-hl.bind(mainMod .. " + SHIFT + Down", hl.dsp.window.move({ direction = "d" }))
+hl.bind(mainMod .. " + SHIFT + H", hl.dsp.window.move({ direction = "l" }))
+hl.bind(mainMod .. " + SHIFT + J", hl.dsp.window.move({ direction = "d" }))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.window.move({ direction = "u" }))
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.window.move({ direction = "r" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + Right", hl.dsp.window.move({ workspace = "r+1" }))
 hl.bind(mainMod .. " + CONTROL + SHIFT + Left", hl.dsp.window.move({ workspace = "r-1" }))
 

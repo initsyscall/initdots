@@ -3,7 +3,7 @@
 # Source: https://codeberg.org/initsyscall/themeInit
 # ---------------------------------------------------------------------
 font-family = "JetBrainsMono Nerd Font"
-font-size = 11
+font-size = 12
 
 # Window Decorations
 window-padding-x = 10
@@ -28,6 +28,7 @@ selection-foreground = #E0DEF4
 # Cursor animation shader (Neovide-like smear trail)
 custom-shader-animation = always
 custom-shader = shaders/cursor_warp.glsl
+
 # Normal colors
 palette = 0=#201D33
 palette = 1=#FF3366
@@ -47,5 +48,3 @@ palette = 12=#CBA6F7
 palette = 13=#A277FF
 palette = 14=#80FFEA
 palette = 15=#908CAA
-
-theme = noctalia
