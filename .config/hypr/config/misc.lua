@@ -1,7 +1,4 @@
 hl.config({
-    dwindle = {
-        preserve_split = true,
-    },
     misc = {
         col = {
             splash = CACHYLGREEN,

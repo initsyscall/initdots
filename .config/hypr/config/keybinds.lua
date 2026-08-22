@@ -12,13 +12,8 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + G", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + D", hl.dsp.window.fullscreen({ mode = 1 }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen())
-hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 
--- Focus
-hl.bind(mainMod .. " + Left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mainMod .. " + Right", hl.dsp.focus({ direction = "right" }))
-hl.bind(mainMod .. " + Up", hl.dsp.focus({ direction = "up" }))
-hl.bind(mainMod .. " + Down", hl.dsp.focus({ direction = "down" }))
+-- Focus: HJKL focus binds live in hyprland-gui.lua (HyprMod-managed)
 hl.bind("ALT + Tab", hl.dsp.window.cycle_next())
 
 -- Move
@@ -51,7 +46,7 @@ hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd(noctCall .. "window-switcher"))
 
 -- Settings & System
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd(noctCall .. "settings-toggle"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(noctCall .. "session lock"))
+-- Lock (SUPER + CTRL + L) lives in hyprland-gui.lua (HyprMod-managed)
 hl.bind(mainMod .. " + ALT + C", hl.dsp.exec_cmd(noctCall .. "panel-toggle launcher /session"))
 hl.bind(mainMod .. " + X", hl.dsp.exec_cmd(noctCall .. "panel-toggle control-center"))
 

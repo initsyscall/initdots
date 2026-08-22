@@ -8,3 +8,6 @@ require("config.keybinds")
 require("config.misc")
 require("config.monitors")
 require("config.windowrules")
+
+-- HyprMod managed settings
+require("hyprland-gui")
