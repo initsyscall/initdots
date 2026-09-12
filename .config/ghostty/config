@@ -3,7 +3,7 @@
 # Source: https://codeberg.org/initsyscall/themeInit
 # ---------------------------------------------------------------------
 font-family = "JetBrainsMono Nerd Font"
-font-size = 12
+font-size = 13
 
 # Window Decorations
 window-padding-x = 10

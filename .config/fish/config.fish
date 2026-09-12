@@ -2,8 +2,6 @@
 set fish_greeting " "
 
 # env
-## Nebulua
-set -gx LUA_PATH "$HOME/.local/share/lua/?.lua;;"
 ## Starship
 starship init fish | source
 

@@ -18,7 +18,7 @@ hl.config({
             vibrancy = 0.35,
             xray = true,
         },
-        dim_special = 0.15,
+        dim_special = 0.6,
         fullscreen_opacity = 0.75,
         inactive_opacity = 0.55,
         rounding = 8,

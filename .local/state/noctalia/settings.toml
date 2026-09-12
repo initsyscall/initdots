@@ -1,4 +1,4 @@
-config_version = 12
+config_version = 13
 
 [bar.default]
 background_opacity = 0.23999999463558197
@@ -75,6 +75,8 @@ widget_order = [
     cx = 960.0
     cy = 898.0
     output = "HDMI-1"
+    placement_height = 0.0
+    placement_width = 0.0
     rotation = 0.0
     type = "login_box"
 
@@ -100,6 +102,8 @@ widget_order = [
     cx = 960.0
     cy = 697.5
     output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -125,6 +129,8 @@ widget_order = [
     cx = 960.0
     cy = 468.0
     output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "clock"
 
@@ -137,6 +143,8 @@ widget_order = [
     cx = 960.0
     cy = 836.0
     output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "sysmon"
 
@@ -194,13 +202,13 @@ transition = [ "fade" ]
     order = "alphabetical"
 
     [wallpaper.default]
-    path = "/home/init/Pictures/Wallpapers/purple_leaves.png"
+    path = "/home/init/Pictures/Wallpapers/wallhaven_k81oj1.jpg"
 
     [wallpaper.last]
-    path = "/home/init/Pictures/Wallpapers/purple_leaves.png"
+    path = "/home/init/Pictures/Wallpapers/wallhaven_k81oj1.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/init/Pictures/Wallpapers/purple_leaves.png"
+    path = "/home/init/Pictures/Wallpapers/wallhaven_k81oj1.jpg"
 
     [[wallpaper.favorite]]
     builtin_palette = "Catppuccin"
