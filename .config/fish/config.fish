@@ -13,9 +13,12 @@ alias ll 'eza -ll'
 alias la 'eza -la'
 alias rf 'source ~/.config/fish/config.fish'
 alias pysv 'python -m http.server'
-alias pack 'pypy3 ~/.config/fish/scripts/packer.py'
-alias ync 'lua ~/.config/fish/scripts/yesntcloned.lua'
 alias thedarkmod 'cd ~/Games/thedarkmod/ && ./thedarkmod.x64'
+
+# My custom scripts
+alias pack 'pypy3 ~/.config/fish/scripts/packer.py'
+alias gobuilder 'bash ~/.config/fish/scripts/gobuilder.sh'
+alias ync 'lua ~/.config/fish/scripts/yesntcloned.lua'
 
 # Tmux Startup
 # if status is-interactive
