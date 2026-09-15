@@ -1,4 +1,4 @@
-config_version = 13
+config_version = 14
 
 [bar.default]
 background_opacity = 0.23999999463558197
@@ -13,6 +13,8 @@ start = [ "control-center", "clock", "spacer_3", "media" ]
 
     [bar.default.dead_zone.actions]
     middle = "settings-toggle"
+
+[calendar]
 
 [control_center.calendar]
 show_events_card = false
@@ -169,6 +171,7 @@ avatar_path = "/home/init/Downloads/initsyscall.png"
 font_family = "JetBrainsMono NF Light"
 panel_anchor_bar = "default"
 password_style = "random"
+settings_show_advanced = false
 
     [shell.launcher]
     app_grid = true
@@ -176,7 +179,6 @@ password_style = "random"
     [shell.panel]
     clipboard_placement = "attached"
     clipboard_position = "auto"
-    open_near_click_launcher = true
     polkit_placement = "attached"
     polkit_position = "auto"
     transparency_mode = "glass"

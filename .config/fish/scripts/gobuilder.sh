@@ -5,7 +5,7 @@ clear
 
 mkdir -p ./.build/
 PROJECT_PATH=$(pwd)
-WIN7_GO_COMPILER_PATH="/home/init/.Mascot/gopher/go-legacy-win7/bin/go"
+WIN7_GO_COMPILER_PATH="/home/init/.clone/gopher/go-legacy-win7/bin/go"
 
 echo "Starting Build At $PROJECT_PATH"
 read -p "Enter Name For Your Compiled Build: " COMPILED_BUILD_NAME
