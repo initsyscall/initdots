@@ -1,6 +1,9 @@
 # Settings
 set fish_greeting " "
 
+# exports
+fish_add_path ~/go/bin/
+
 # env
 ## Starship
 starship init fish | source
@@ -19,6 +22,7 @@ alias thedarkmod 'cd ~/Games/thedarkmod/ && ./thedarkmod.x64'
 alias pack 'pypy3 ~/.config/fish/scripts/packer.py'
 alias gobuilder 'bash ~/.config/fish/scripts/gobuilder.sh'
 alias ync 'lua ~/.config/fish/scripts/yesntcloned.lua'
+alias adb-connect 'export ADB_MDNS_OPENSCREEN=1 && adb connect $(adb mdns services 2>/dev/null | grep -oE '[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]{5}' | head -n 1)'
 
 # Tmux Startup
 # if status is-interactive

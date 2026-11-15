@@ -8,6 +8,9 @@ hl.env("HYPRCURSOR_SIZE", "14")
 
 -- Settings
 hl.config({
+    cursor = {
+        inactive_timeout = 10.0,
+    },
     decoration = {
         active_opacity = 0.75,
         blur = {
@@ -18,13 +21,19 @@ hl.config({
             vibrancy = 0.35,
             xray = true,
         },
+        dim_around = 0.3,
+        dim_inactive = true,
         dim_special = 0.6,
-        fullscreen_opacity = 0.75,
+        dim_strength = 0.25,
+        fullscreen_opacity = 1.0,
         inactive_opacity = 0.55,
         rounding = 8,
     },
     general = {
         layout = "master",
+    },
+    input = {
+        sensitivity = -0.15,
     },
 })
 
