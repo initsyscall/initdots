@@ -110,40 +110,15 @@ hl.bind(mainMod .. " + S", hl.dsp.workspace.toggle_special())
 hl.config({ input = { kb_options = "caps:escape" } })
 
 ------------------------------------
----- VIRTUAL BRIGHTNESS (SHADER) ----
+----         BRIGHTNESS         ----
 ------------------------------------
-
--- Dims the composited output with a tiny GLSL shader: no backlight, no helper
--- daemon. Steps by 10 from 100 down to 10; one more step down wraps to 100.
-local brightnessDir = (os.getenv("XDG_CACHE_HOME") or (os.getenv("HOME") .. "/.cache")) .. "/hypr-brightness"
-os.execute("mkdir -p '" .. brightnessDir .. "'")
-
-for level = 10, 90, 10 do
-  local handle = io.open(brightnessDir .. "/dim-" .. level .. ".glsl", "w")
-  if handle then
-    handle:write(string.format([[#version 300 es
-precision mediump float;
-in vec2 v_texcoord;
-uniform sampler2D tex;
-out vec4 fragColor;
-
-void main() {
-    vec4 pix = texture(tex, v_texcoord);
-    fragColor = vec4(pix.rgb * %.2f, pix.a);
-}
-]], level / 100))
-    handle:close()
-  end
-end
 
 local brightnessLevel = 100
 
+hl.exec_cmd("hyprctl hyprsunset gamma " .. brightnessLevel)
+
 local function applyBrightness()
-  local shader = ""
-  if brightnessLevel < 100 then
-    shader = brightnessDir .. "/dim-" .. brightnessLevel .. ".glsl"
-  end
-  hl.config({ decoration = { screen_shader = shader } })
+  hl.exec_cmd("hyprctl hyprsunset gamma " .. brightnessLevel)
   hl.exec_cmd("noctalia msg brightness-osd " .. brightnessLevel)
 end
 
@@ -156,4 +131,3 @@ hl.bind(mainMod .. " + SHIFT + Down", function()
   brightnessLevel = brightnessLevel <= 10 and 100 or brightnessLevel - 10
   applyBrightness()
 end, { repeating = true })
-
